@@ -8,10 +8,24 @@
 $main-red: #e81943;
 
 .timeline-container {
+  padding: 0 15px;
   app-timeline-event:nth-child(odd) ::ng-deep .event-container {
     .event-content {
       flex-direction: row-reverse;
-     
     }
   }
+}
+.main-events-container{
+  margin-top: 20px;
+  position: relative;
+  .custom-shape-divider-top-1650719281 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    fill: $main-red;
+}
 }
