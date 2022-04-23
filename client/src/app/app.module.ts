@@ -23,7 +23,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgImageSliderModule
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
