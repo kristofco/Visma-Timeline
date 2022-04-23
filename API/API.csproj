@@ -6,7 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="QRCodes" />
   </ItemGroup>
 
 </Project>
