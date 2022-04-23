@@ -13,21 +13,39 @@
     font-size: 25px;
     font-weight: bold;
   }
-  .main-event-description{
-      font-size: 16px;
+  .main-event-description {
+    font-size: 16px;
   }
-  .main-event-content{
-      min-width: 50%;
-      padding: 10px;
-      padding-left: 20px;
-      height: 100%;
+  .main-event-content {
+    min-width: 50%;
+    padding: 10px;
+    padding-left: 20px;
+    height: 100%;
   }
   .main-event-img {
+    // max-width: 50%;
+    .imageSliderContainer {
+      min-width: 45vw;
       max-width: 50%;
+      height: max-content;
+    }
     img {
       border-radius: 5px;
-      box-shadow: 0 0 15px 0 rgb(0 0 0 / 15%);
+      //width: 100px !important;
+    }
+  }
+}
+.ng-image-slider .ng-image-slider-container .main .main-inner .img-div {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-event-desc-container {
+    flex-direction: column;
+    .imageSliderContainer{
+      min-width: 90vw;
       max-width: 100%;
+      height: max-content;
     }
   }
 }
