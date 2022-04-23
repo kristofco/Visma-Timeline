@@ -950,19 +950,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mrave\\.nuget\\packages\\": {}
+    "C:\\Users\\the11\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visma-Timeline\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Visma-Timeline\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\mrave\\.nuget\\packages\\",
-      "outputPath": "D:\\Visma-Timeline\\API\\obj\\",
+      "projectPath": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\the11\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrave\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\the11\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1011,12 +1011,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.15, 5.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1025,7 +1019,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
