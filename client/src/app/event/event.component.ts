@@ -13,14 +13,14 @@ export class EventComponent implements OnInit {
       thumbImage:
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
       alt: 'Image 1',
-     // title: 'Image 1',
+      // title: 'Image 1',
     },
     {
       image:
-        'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
+        'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg',
       thumbImage:
-        'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
-    //  title: 'Image 2',
+        'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg',
+      //  title: 'Image 2',
       alt: 'Image 2',
     },
     {
@@ -28,7 +28,7 @@ export class EventComponent implements OnInit {
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
       thumbImage:
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
-  //    title: 'Image 3',
+      //    title: 'Image 3',
       alt: 'Image 3',
     },
     {
@@ -36,7 +36,7 @@ export class EventComponent implements OnInit {
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
       thumbImage:
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
-     // title: 'Image 4',
+      // title: 'Image 4',
       alt: 'Image 4',
     },
     {
@@ -44,7 +44,7 @@ export class EventComponent implements OnInit {
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
       thumbImage:
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
-    // title: 'Image 5',
+      // title: 'Image 5',
       alt: 'Image 5',
     },
     {
@@ -52,7 +52,7 @@ export class EventComponent implements OnInit {
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
       thumbImage:
         'https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg',
-    //  title: 'Image 6',
+      //  title: 'Image 6',
       alt: 'Image 6',
     },
   ];
