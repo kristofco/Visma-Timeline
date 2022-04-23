@@ -1,7 +1,7 @@
-<div class="event-container">
+<div class="event-container" (appearOnScreen)="onAppear()" >
     <div class="timeline-divider"></div>
     <div class="timeline-dot"></div>
-    <div class="event-content">
+    <div class="event-content" [@appear]="getAppear">
         <div class="timeline-event-date">Date</div>
         <div class="event-content-item img-content-item">
             <div class="content-container">
@@ -12,7 +12,7 @@
         <div class="event-content-item ">
             <div class="content-container ">   
                <div class="relative"><h4 class="event-title"> <a href="#eventid">Event Name</a></h4></div>
-                <div>qr code</div>
+                <div>{{qrPath}}</div>
                 
             </div>
         </div>
