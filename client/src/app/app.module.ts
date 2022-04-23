@@ -28,10 +28,7 @@ import { AppearDirective } from './appear-on-screen.directive';
     BrowserAnimationsModule,
     NgImageSliderModule,
     NgbModule,
-<<<<<<< HEAD
     HttpClientModule
-=======
->>>>>>> a45a29f3aeb0f93fecca780fdfdef843185d4e37
   ],
   providers: [],
   bootstrap: [AppComponent],
