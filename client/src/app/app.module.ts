@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { TimelineEventComponent } from './timeline-event/timeline-event.component';
 import { EventComponent } from './event/event.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
