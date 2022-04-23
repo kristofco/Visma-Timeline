@@ -16,7 +16,7 @@ namespace API.Controllers
         [HttpGet]
         public QrDto Get(string url)
         {
-            var client = new MongoClient("mongodb+srv://test:test@cluster0.vpvmn.mongodb.net/timeline?retryWrites=true&w=majority");
+            var client = new MongoClient("mongodb+srv://test2:test@cluster0.suxuo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             var database = client.GetDatabase("QR");
             var query = new BsonDocument("link", url);
 

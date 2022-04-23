@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "API/1.0.0": {
         "dependencies": {
+          "Microsoft.OpenApi": "1.2.3",
           "MongoDB.Driver": "2.15.0",
           "QRCoder": "1.4.3",
           "Swashbuckle.AspNetCore": "5.6.3",

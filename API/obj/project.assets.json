@@ -944,13 +944,18 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Microsoft.OpenApi >= 1.2.3",
       "MongoDB.Driver >= 2.15.0",
       "QRCoder >= 1.4.3",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\the11\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\marti\\.nuget\\packages\\": {}
+>>>>>>> 6916193b6f8c669960737dc918c97ad10e072fc2
   },
   "project": {
     "version": "1.0.0",
@@ -969,7 +974,6 @@
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -988,6 +992,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.OpenApi": {
+            "target": "Package",
+            "version": "[1.2.3, )"
+          },
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.15.0, )"
