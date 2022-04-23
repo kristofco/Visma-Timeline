@@ -49,13 +49,16 @@ export class TimelineEventComponent implements OnInit {
   // }
   qrPath!: string;
   qrCode = "https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg";
-  
+  loading = true;
   constructor(private as: AppService) {}
 
+
   ngOnInit(): void {
-    this.as. getQRcode(this.qrCode).subscribe((response: IQRcodeData) => {
+    this.loading=false;
+    this.as. getQRcode("pelo").subscribe((response: IQRcodeData) => {
       let responseData = response;
-      this.qrPath=responseData.path;
+      console.log(response);
+     
 
     })
   }

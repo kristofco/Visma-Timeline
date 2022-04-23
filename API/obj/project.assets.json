@@ -951,11 +951,7 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\the11\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\marti\\.nuget\\packages\\": {}
->>>>>>> 6916193b6f8c669960737dc918c97ad10e072fc2
   },
   "project": {
     "version": "1.0.0",
@@ -974,6 +970,7 @@
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
