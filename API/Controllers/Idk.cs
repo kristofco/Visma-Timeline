@@ -15,10 +15,10 @@ namespace API.Controllers
         [HttpGet("Get")]
         public CarDto Get()
         {
-            var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("idk");
-            var query = new BsonDocument("name", "peter");
-            return database.GetCollection<CarDto>("idk").Find(query).First();
+            var client = new MongoClient("mongodb+srv://test:test@cluster0.vpvmn.mongodb.net/timeline?retryWrites=true&w=majority");
+            var database = client.GetDatabase("timeline");
+            var query = new BsonDocument("name", "Peter");
+            return database.GetCollection<CarDto>("QR").Find(query).First();
         }
     }
 }

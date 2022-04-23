@@ -98,10 +98,16 @@
       }
 
       h4 {
+        cursor: pointer;
         font-size: 24px;
         font-weight: bold;
         color: $main-red;
+        
       }
+      // h4:hover{
+      //   scale: 1.2;
+      // text-decoration: underline;
+      // }
       p{
         font-size: 16px;
       }
