@@ -10,6 +10,7 @@ import { TimelineEventComponent } from './timeline-event/timeline-event.componen
 import { EventComponent } from './event/event.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppearDirective } from './appear-on-screen.directive';
 
 @NgModule({
   declarations: [
@@ -18,16 +19,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TimelineEventComponent,
     EventComponent,
     ScrollToTopComponent,
-    
+    AppearDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     BrowserAnimationsModule,
     NgImageSliderModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
