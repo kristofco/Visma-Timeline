@@ -2,10 +2,46 @@
 
 .event-container {
   position: relative;
- 
   //justify-content:;
   width: 100%;
+ 
 }
+
+.relative{
+  position: relative;
+  width: fit-content;
+}
+
+.event-title{
+  cursor: pointer;
+  display: inline-block;
+}
+
+.event-title::after {
+  content : "";
+  position : absolute;
+  width : 100%;
+  height : 3px;
+  background-color: $main-red;
+  left: 0%;
+  bottom: 8px;
+  transform : scaleX(0);
+  transform-origin: bottom right;
+  transition : transform 0.25s linear;
+}
+.event-title:hover::after {
+  transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.event-title:hover{
+  //text-decoration: underline;
+}
+
+.div-title{
+  width: fit-content;
+}
+
 .timeline-divider {
   background-color: rgb(221, 221, 221);
   bottom: 0;
