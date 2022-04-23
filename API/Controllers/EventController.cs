@@ -7,6 +7,7 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using QRCoder;
 using System.Linq;
+using System.Reflection.Metadata;
 
 namespace API.Controllers
 {
@@ -19,10 +20,9 @@ namespace API.Controllers
         [HttpGet]
         public EventDto Get()
         {
-            var client = new MongoClient("mongodb+srv://test:test@cluster0.vpvmn.mongodb.net/timeline?retryWrites=true&w=majority");
+            var client = new MongoClient("mongodb+srv://test2:test@cluster0.suxuo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             var database = client.GetDatabase("articles");
-            var daco = database.GetCollection<object>("articles").Find(new BsonDocument()).First().ToString();
-            Console.WriteLine(daco);
+            return database.GetCollection<EventDto>("articles").Find(new BsonDocument()).First();
             //return database.GetCollection<EventDto>("articles").Find(_ => true).;
             return null;
         }

@@ -10,7 +10,7 @@ namespace API.Dto
         public ObjectId Id { get; set;}
 
         [BsonElement("yearList")]
-        public List<YearList> EventList { get; set;}
+        public List<YearList> YearList { get; set;}
     }
     
     public class YearList
@@ -24,11 +24,11 @@ namespace API.Dto
     
     public class Event
     {
-        [BsonElement("eventDate")]
-        public string EventDate { get; set;}
-        
         [BsonElement("eventName")]
         public string EventName { get; set;}
+        
+        [BsonElement("eventDate")]
+        public string EventDate { get; set;}
         
         [BsonElement("eventDescription")]
         public string EventDescription { get; set;}
