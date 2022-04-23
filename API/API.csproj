@@ -14,4 +14,9 @@
     <Folder Include="QRCodes" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\Idk.cs" />
+    <Compile Remove="Dto\CarDto.cs" />
+  </ItemGroup>
+
 </Project>

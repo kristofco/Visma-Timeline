@@ -11,6 +11,7 @@ import { EventComponent } from './event/event.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { AppearDirective } from './appear-on-screen.directive';
 
 @NgModule({
   declarations: [
@@ -19,17 +20,20 @@ import { HttpClientModule } from '@angular/common/http';
     TimelineEventComponent,
     EventComponent,
     ScrollToTopComponent,
-    
+    AppearDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     BrowserAnimationsModule,
     NgImageSliderModule,
     NgbModule,
+<<<<<<< HEAD
     HttpClientModule
+=======
+>>>>>>> a45a29f3aeb0f93fecca780fdfdef843185d4e37
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
