@@ -14,6 +14,8 @@ $main-white: #f0f0f0;
   app-timeline-event:nth-child(odd) ::ng-deep .event-container {
     .event-content {
       flex-direction: row-reverse;
+      text-align: right;
+    
     }
   }
 }
