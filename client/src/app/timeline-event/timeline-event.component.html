@@ -1,7 +1,7 @@
-<div class="event-container" (appearOnScreen)="onAppear()" [@appear]="getAppear">
+<div class="event-container" (appearOnScreen)="onAppear()" >
     <div class="timeline-divider"></div>
     <div class="timeline-dot"></div>
-    <div class="event-content">
+    <div class="event-content" [@appear]="getAppear">
         <div class="timeline-event-date">Date</div>
         <div class="event-content-item img-content-item">
             <div class="content-container">
