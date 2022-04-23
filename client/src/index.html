@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>VismaTimeline</title>
@@ -9,9 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    ::-webkit-scrollbar {
+      width: 9px;
+      height: 5px;
+      z-index: 100;
+      /* display: none;  */
+    }
+
+    ::-webkit-scrollbar-track {
+      transition: 0.2s linear;
+      background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e81943;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body class="mat-typography">
   <app-root></app-root>
 </body>
+
 </html>
