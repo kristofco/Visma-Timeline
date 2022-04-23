@@ -15,6 +15,7 @@ import { EventComponent } from './event/event.component';
     HeaderComponent,
     TimelineEventComponent,
     EventComponent,
+    
   ],
   imports: [
     BrowserModule,

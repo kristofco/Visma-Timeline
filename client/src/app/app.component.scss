@@ -1,13 +1,17 @@
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 
-$main-red: #e81943; 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+$main-red: #e81943;
 $main-white: #f0f0f0;
 $main-black: #191919;
 
@@ -17,13 +21,17 @@ $main-black: #191919;
     .event-content {
       flex-direction: row-reverse;
       text-align: right;
-      .content-container{
+      .content-container {
         align-items: flex-end;
+      }
+      .timeline-event-date {
+        left: 30px;
+        
       }
     }
   }
 }
-.curve-line{
+.curve-line {
   margin-top: 130px;
   position: relative;
   .custom-shape-divider-top-1650719281 {
@@ -35,5 +43,5 @@ $main-black: #191919;
     line-height: 0;
     transform: rotate(180deg);
     fill: $main-red;
-}
+  }
 }
