@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { IQRcodeData } from './model/QRcodeData';
 
-export interface IQRdata{
-  ImageURL:string;
-}
+
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +14,7 @@ export class AppService {
    }
 
    getQRcode(ImageURL : string){
-    return this.http.get<IQRdata>(this.baseUrl + 'FearAndGreed/Get?limit='+ImageURL);
+    return this.http.get<IQRcodeData>(this.baseUrl + 'QrCode?url='+ImageURL);
 
   }
 }
