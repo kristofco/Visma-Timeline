@@ -10,6 +10,7 @@ import { TimelineEventComponent } from './timeline-event/timeline-event.componen
 import { EventComponent } from './event/event.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgImageSliderModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
