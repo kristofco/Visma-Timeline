@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,12 +14,13 @@ import { EventComponent } from './event/event.component';
     AppComponent,
     HeaderComponent,
     TimelineEventComponent,
-    EventComponent
+    EventComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

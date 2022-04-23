@@ -2,25 +2,30 @@
 
 .main{
    padding: 20px 20px;  
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
  }
 
 
 #logo{
    display: inline;
    transition: transform .2s ease;
-
+   position: absolute;
+   left: 20px;
+   top: 50%;
+   transform: translateY(-50%) scale(1);
 }
 
 #logo:hover{
-   transform: scale(1.1);
+   transform: translateY(-50%) scale(1.1);
 }
 
 
 .title{
     display: inline;
-    color: $main-red;
+    color: $main-black;
+    font-weight: 700;
     font-size: 50px;
-    margin-left: 30%;
-   
-   
 }

@@ -3,11 +3,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-$main-red: #e81943;
+
+$main-red: #e81943; 
 $main-white: #f0f0f0;
+$main-black: #191919;
 
 .timeline-container {
   padding: 0 15px;
@@ -15,12 +17,14 @@ $main-white: #f0f0f0;
     .event-content {
       flex-direction: row-reverse;
       text-align: right;
-    
+      .content-container{
+        align-items: flex-end;
+      }
     }
   }
 }
 .curve-line{
-  margin-top: 100px;
+  margin-top: 130px;
   position: relative;
   .custom-shape-divider-top-1650719281 {
     position: absolute;
