@@ -1,6 +1,24 @@
 @import "../app.component.scss";
 
-.main-event-desc-container{
-    margin-top: 67.15px;
-    background-color: $main-red;
+.main-event-desc-container {
+  // margin-top: 67.15px;
+  background-color: $main-red;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: $main-white;
+  .main-event-header {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .main-event-img {
+      max-width: 50%;
+    img {
+      border-radius: 5px;
+      box-shadow: 0 0 15px 0 rgb(0 0 0 / 15%);
+      max-width: 100%;
+    }
+  }
 }

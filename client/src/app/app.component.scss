@@ -7,6 +7,7 @@
 }
 
 $main-red: #e81943;
+$main-white: #f0f0f0;
 
 .timeline-container {
   padding: 0 15px;
@@ -16,8 +17,8 @@ $main-red: #e81943;
     }
   }
 }
-.main-events-container{
-  margin-top: 20px;
+.curve-line{
+  margin-top: 100px;
   position: relative;
   .custom-shape-divider-top-1650719281 {
     position: absolute;
