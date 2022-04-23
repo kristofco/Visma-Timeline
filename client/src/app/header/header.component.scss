@@ -1,31 +1,38 @@
 @import "../app.component.scss";
 
-.main{
-   padding: 20px 20px;  
-   display: flex;
-   position: relative;
-   justify-content: center;
-   align-items: center;
- }
-
-
-#logo{
-   display: inline;
-   transition: transform .2s ease;
-   position: absolute;
-   left: 20px;
-   top: 50%;
-   transform: translateY(-50%) scale(1);
+.main {
+  padding: 20px 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-#logo:hover{
-   transform: translateY(-50%) scale(1.1);
+#logo {
+  display: inline;
+  transition: transform 0.2s ease;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
 }
 
+#logo:hover {
+  transform: translateY(-50%) scale(1.1);
+}
 
-.title{
-    display: inline;
-    color: $main-black;
-    font-weight: 700;
-    font-size: 50px;
+.title {
+  display: inline;
+  color: $main-black;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+  #logo {
+    display: none;
+  }
+  .title{
+     font-size: 30px;
+  }
 }

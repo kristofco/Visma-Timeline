@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Visma-Timeline\\API\\API.csproj": {}
+    "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Visma-Timeline\\API\\API.csproj": {
+    "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Visma-Timeline\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Visma-Timeline\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Visma-Timeline\\API\\obj\\",
+        "projectPath": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\the11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\the11\\OneDrive\\Počítač\\Visma Timeline\\Visma-Timeline\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\the11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
