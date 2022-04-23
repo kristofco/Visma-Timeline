@@ -1,9 +1,18 @@
-$main-red:#E81943;
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
+$main-red: #e81943;
+
+.timeline-container {
+  app-timeline-event:nth-child(odd) ::ng-deep .event-container {
+    .event-content {
+      flex-direction: row-reverse;
+     
+    }
+  }
+}
