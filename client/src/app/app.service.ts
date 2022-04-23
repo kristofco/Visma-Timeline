@@ -15,6 +15,5 @@ export class AppService {
 
    getQRcode(ImageURL : string){
     return this.http.get<IQRcodeData>(this.baseUrl + 'QrCode?url='+ImageURL);
-
   }
 }

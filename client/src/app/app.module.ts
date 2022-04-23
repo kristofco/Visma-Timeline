@@ -25,10 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgImageSliderModule,
-<<<<<<< HEAD
-=======
     NgbModule
->>>>>>> ab5b35ae961194440a67b574b3a7d3173cfcbf5a
   ],
   providers: [],
   bootstrap: [AppComponent]

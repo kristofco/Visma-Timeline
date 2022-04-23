@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event.component.scss'],
 })
 export class EventComponent implements OnInit {
+  currentRate = 0;
+  readonly = false;
   imageObject: Array<object> = [
     {
       image:
