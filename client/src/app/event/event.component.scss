@@ -2,12 +2,13 @@
 
 .main-event-desc-container {
   // margin-top: 67.15px;
+  min-height: 100vh;
   background-color: $main-red;
   padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   color: $main-white;
   .main-event-header {
     font-size: 25px;
