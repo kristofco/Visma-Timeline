@@ -24,11 +24,11 @@ import { AppearDirective } from './appear-on-screen.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     BrowserAnimationsModule,
     NgImageSliderModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
