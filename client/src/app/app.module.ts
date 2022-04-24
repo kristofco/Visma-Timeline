@@ -13,6 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AppearDirective } from './appear-on-screen.directive';
 import { TimelineEventContentComponent } from './timeline-event-content/timeline-event-content.component';
+import { GuessNumberComponent } from './guess-number/guess-number.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { TimelineEventContentComponent } from './timeline-event-content/timeline
     ScrollToTopComponent,
     AppearDirective,
     TimelineEventContentComponent,
+    GuessNumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { TimelineEventContentComponent } from './timeline-event-content/timeline
     NgImageSliderModule,
     NgbModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,11 @@
+<div class="guess-container">
+    <form class="form" [formGroup]="Form" (ngSubmit)="onSubmit()">
+        <label for="num">Wow, you got so far,
+            guess a number from 1 to 10</label>
+        <input id="num"  type="text" formControlName="guessedNum">
+        <input type="submit" value="Guess" >
+    </form>
+    <div class="result-guess">
+        {{ResultMessage}}
+    </div>
+</div>

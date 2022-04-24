@@ -1,0 +1,18 @@
+.guess-container {
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    bottom: 100;
+    transform: translateY(-150px);
+    right: 80px;
+    z-index: 2;
+}

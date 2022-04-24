@@ -52,7 +52,7 @@ export class TimelineEventContentComponent implements OnInit {
     this.as.getQRcode(this.eventL.eventName).subscribe((response: IQRcodeData) => {
       let responseData = response;        
       this.qrPath="data:image/png;base64,"+responseData.bitmap;
-      console.log(response);
+      // console.log(response);
     })
    
   }
