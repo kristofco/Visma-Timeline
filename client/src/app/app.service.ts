@@ -4,8 +4,6 @@ import { environment } from 'src/environments/environment';
 import { IEventsData } from './model/EventsData';
 import { IQRcodeData } from './model/QRcodeData';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
