@@ -26,7 +26,7 @@ namespace API.Controllers
                 var insertQuery = new BsonDocument
                 {
                     { "link", url },
-                    { "path", $"\\API\\QRCodes\\{url}" }
+                    { "path", $"../../../../API/QRCodes/{url}" }
                 };
 
                 database.GetCollection<BsonDocument>("QR").InsertOne(insertQuery);

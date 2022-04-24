@@ -55,8 +55,9 @@ export class TimelineEventComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading=false;
-    this.as. getQRcode("pelo").subscribe((response: IQRcodeData) => {
+    this.as. getQRcode("bb").subscribe((response: IQRcodeData) => {
       let responseData = response;
+      this.qrPath=responseData.path;
       console.log(response);
      
 

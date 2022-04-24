@@ -35,7 +35,7 @@ namespace API
             
             services.AddCors(options =>
             {
-                options.AddPolicy(name: "CorsPolicy",
+                options.AddDefaultPolicy(
                     builder =>
                     {
                         builder.WithOrigins("https://localhost:4200", "http://localhost:4200")
@@ -56,7 +56,7 @@ namespace API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors();
             app.UseRouting();
 
             app.UseAuthorization();
