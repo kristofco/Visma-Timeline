@@ -18,7 +18,7 @@ export interface IEventYearList{
 
 export interface IEventList{
     eventName: string;
-    eventData: string;
+    eventDate: string;
     eventDescription: string;
-    eventPhotos: string[];
+    eventPhotos: any[];
 }

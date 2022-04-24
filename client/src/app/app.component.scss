@@ -19,16 +19,13 @@ $main-black: #191919;
 
 .timeline-container {
   padding: 0 15px;
-  app-timeline-event:nth-child(odd) ::ng-deep .event-container {
+  app-timeline-event ::ng-deep .time-event  .event-container:nth-child(odd) {
+  
     .event-content {
       flex-direction: row-reverse;
       text-align: right;
       .content-container {
         align-items: flex-end;
-      }
-      .timeline-event-date {
-        left: 30px;
-        
       }
     }
   }

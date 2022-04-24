@@ -1,11 +1,12 @@
-using System.Drawing;
-using System.Drawing.Imaging;
-using API.Dto;
-using Microsoft.AspNetCore.Mvc;
-using MongoDB.Bson;
-using MongoDB.Driver;
+using System;
+using System.Drawing; 
+using System.Drawing.Imaging; 
+using System.IO; 
+using API.Dto; 
+using Microsoft.AspNetCore.Mvc; 
+using MongoDB.Bson; 
+using MongoDB.Driver; 
 using QRCoder;
-
 namespace API.Controllers
 {
     
@@ -26,7 +27,7 @@ namespace API.Controllers
                 var insertQuery = new BsonDocument
                 {
                     { "link", url },
-                    { "path", $"../../../../API/QRCodes/{url}" }
+                    { "bitmap", QR.GenerateQR(url) }
                 };
 
                 database.GetCollection<BsonDocument>("QR").InsertOne(insertQuery);
@@ -38,13 +39,17 @@ namespace API.Controllers
 
     static class QR
     {
-        public static void GenerateQR(string url)
+        public static string GenerateQR(string url)
         {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(20,Color.Black, Color.White,(Bitmap)Image.FromFile("visma-logo1.png")); 
-            qrCodeImage.Save($"QRCodes/{url}.png", ImageFormat.Png);
+            System.IO.MemoryStream ms = new MemoryStream();
+            qrCodeImage.Save(ms, ImageFormat.Jpeg);
+            byte[] byteImage = ms.ToArray();
+            var SigBase64= Convert.ToBase64String(byteImage); // Get Base64
+            return SigBase64;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace API.Dto
         [BsonElement("link")]
         public string Link { get; set;}
         
-        [BsonElement("path")]
-        public string Path { get; set;}
+        [BsonElement("bitmap")]
+        public string Bitmap { get; set;}
     }
 }

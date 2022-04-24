@@ -12,8 +12,8 @@ export class AppService {
   constructor(private http: HttpClient) {
    }
 
-   getQRcode(ImageURL : string){
-    return this.http.get<IQRcodeData>(this.baseUrl + 'QrCode?url='+ImageURL);
+   getQRcode(link : string){
+    return this.http.get<IQRcodeData>(this.baseUrl + 'QrCode?url='+link);
   }
 
   getEvents(){

@@ -12,6 +12,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AppearDirective } from './appear-on-screen.directive';
+import { TimelineEventContentComponent } from './timeline-event-content/timeline-event-content.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AppearDirective } from './appear-on-screen.directive';
     EventComponent,
     ScrollToTopComponent,
     AppearDirective,
+    TimelineEventContentComponent,
   ],
   imports: [
     BrowserModule,
