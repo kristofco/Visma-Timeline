@@ -7,6 +7,9 @@ import {
   transition,
 } from '@angular/animations';
 import { IEventList } from '../model/EventsData';
+import { DomSanitizer } from '@angular/platform-browser';
+import { AppService } from '../app.service';
+import { IQRcodeData } from '../model/QRcodeData';
 
 @Component({
   selector: 'app-timeline-event-content',
@@ -33,6 +36,7 @@ import { IEventList } from '../model/EventsData';
 export class TimelineEventContentComponent implements OnInit {
   onScreen: boolean = false;
   @Input() eventL!: IEventList;
+  qrPath: string = "";
 
   onAppear() {
     this.onScreen = true;
@@ -42,11 +46,20 @@ export class TimelineEventContentComponent implements OnInit {
   get getAppear() {
     return this.onScreen ? 'yes' : 'no';
   }
-  constructor() { }
+  constructor(private sanitizer:DomSanitizer, private as: AppService) { }
 
   ngOnInit(): void {
-    console.log(this.eventL);
+    this.as.getQRcode(this.eventL.eventName).subscribe((response: IQRcodeData) => {
+      let responseData = response;        
+      this.qrPath="data:image/png;base64,"+responseData.bitmap;
+      console.log(response);
+    })
+   
+  }
     
+  transform(path: string){
+    return this.sanitizer.bypassSecurityTrustResourceUrl(path);
+    }
   }
 
-}
+

@@ -20,6 +20,8 @@
             padding: 30px;
             display: flex;
             flex-direction: column;
+            text-align: center;
+            align-items: center;
 
             img {
                 max-width: 100%;
@@ -77,4 +79,10 @@
 .event-title:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+.qrCode{
+    display: block;
+    height: 120px;
+    margin: 15px auto;
 }

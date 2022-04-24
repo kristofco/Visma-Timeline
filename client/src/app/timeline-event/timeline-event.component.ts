@@ -49,21 +49,10 @@ export class TimelineEventComponent implements OnInit {
   //   ImgUrl:"url",
   // }
   yearList: IEventYearList[] = [];
-  qrPath!: string;
-  qrCode = "https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg";
-  loading = true;
-  constructor(private as: AppService) {}
+  constructor(private as: AppService, ) {}
 
 
   ngOnInit(): void {
-    this.loading=false;
-    this.as. getQRcode("c2").subscribe((response: IQRcodeData) => {
-      let responseData = response;
-      this.qrPath=responseData.bitmap;
-      console.log(response);
-
-    })
-
     this.as.getEvents().subscribe((response: IEventsData)=>{
       let resData = response.yearList;                         
       for(let idx = 0; idx < resData.length; idx++){                
