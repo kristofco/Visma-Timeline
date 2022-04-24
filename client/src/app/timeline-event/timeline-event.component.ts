@@ -8,6 +8,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import { IEventsData, IEventYearList } from '../model/EventsData';
 
 @Component({
   selector: 'app-timeline-event',
@@ -47,6 +48,7 @@ export class TimelineEventComponent implements OnInit {
   //   title:"EVENT",
   //   ImgUrl:"url",
   // }
+  yearList: IEventYearList[] = [];
   qrPath!: string;
   qrCode = "https://hackkosice.com/images/events/hk19/arrival_registration_hu9c5b0c793d9bb1618b8c596bf6a17dfb_3125095_640x360_fill_q60_box_smart1.jpg";
   loading = true;
@@ -55,11 +57,23 @@ export class TimelineEventComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading=false;
-    this.as. getQRcode("bb").subscribe((response: IQRcodeData) => {
+    this.as. getQRcode("goldvanula").subscribe((response: IQRcodeData) => {
       let responseData = response;
       this.qrPath=responseData.path;
       console.log(response);
-     
+
+    })
+
+    this.as.getEvents().subscribe((response: IEventsData)=>{
+      let resData = response.yearList;                         
+      for(let idx = 0; idx < resData.length; idx++){                
+        let yearData = {} as IEventYearList;                              
+
+        yearData.year = resData[idx].year;       
+        yearData.eventList = resData[idx].eventList;
+        
+        this.yearList.push(yearData);                               
+      }
 
     })
   }

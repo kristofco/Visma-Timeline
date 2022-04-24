@@ -44,7 +44,7 @@ namespace API.Controllers
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(20,Color.Black, Color.White,(Bitmap)Image.FromFile("visma-logo1.png")); 
-            qrCodeImage.Save($"QRCodes/{url}.png", ImageFormat.Jpeg);
+            qrCodeImage.Save($"QRCodes/{url}.png", ImageFormat.Png);
         }
     }
 }

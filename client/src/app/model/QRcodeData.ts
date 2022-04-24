@@ -1,5 +1,5 @@
 export interface IQRcodeData{
-    id: IQRcodeInfo;
+    id: IQRcodeInfo[];
     link: string;
     path: string;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
+import { IEventsData, IEventYearList } from '../model/EventsData';
 
 
 @Component({
@@ -8,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventComponent implements OnInit {
   currentRate = 0;
+  yearList: IEventYearList[] = [];
   readonly = false;
   imageObject: Array<object> = [
     {
@@ -55,7 +58,20 @@ export class EventComponent implements OnInit {
       alt: 'Image 6',
     },
   ];
-  constructor() {}
+  constructor(private as: AppService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.as.getEvents().subscribe((response: IEventsData)=>{
+      let resData = response.yearList;                         
+      for(let idx = 0; idx < resData.length; idx++){                
+        let yearData = {} as IEventYearList;                              
+
+        yearData.year = resData[idx].year;       
+        yearData.eventList = resData[idx].eventList;
+        
+        this.yearList.push(yearData);                               
+      }
+
+    })
+  }
 }
